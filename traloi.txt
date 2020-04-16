@@ -1,0 +1,10 @@
+4) Các phương thức vòng đời 
+khi ứng dụng đang chạy lần lượt là onCreate, onStart, onResume 
+và khi người sử dụng bấm vào nút back lần lượt là onPause, onStop, onDestroy 
+sau đó mở lại ứng dụng lần lượt là onCreate, onStart, onResume
+5) Các phương thức vòng đời 
+khi ứng dụng đang chạy lần lượt là onCreate, onStart, onResume 
+và người sử dụng bấm vào nút home lần lượt là onPause, onStop
+và sau đó mở lại ứng dụng lần lượt là onReStart, onStart, onResume
+6) Nếu cần lưu thông tin của ứng dụng để khôi phục lại trạng thái hiển thị của ứng dụng khi chạy lại ứng dụng thì cần phải thực hiện trong phương thức vòng đời onPause 
+vì Phương thức này thường dùng để ghi các thay đổi chưa được lưu, và những công việc tốn CPU khác một phần để tránh Hệ thống có thể kill activity trong trạng thái này.
