@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         Log.d("LifeCycle","Onstart Caller");
-        Toast.makeText(getApplicationContext(), "onCreate", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), "onOnstart", Toast.LENGTH_SHORT).show();
     }
 
     @Override
